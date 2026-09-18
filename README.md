@@ -22,6 +22,9 @@ Contiene clases (Data Transfer Object) usadas para transportar datos entre capas
 ### 7. ¿Para qué sirve el paquete Exception en la estructura Spring Boot?
 Contiene las clases personalizadas para el manejo de errores y excepciones, capturando situaciones anómalas de forma controlada, generalmente junto a un manejador global (@ControllerAdvice o @ExceptionHandler).
 
+## Diagrama de clases
+
+![Diagrama de clases](docs/diagrama-de-clases.png)
 
 # Bibliografía
 
