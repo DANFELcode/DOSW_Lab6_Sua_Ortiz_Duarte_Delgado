@@ -8,12 +8,16 @@
 ### 3. ¿Para qué sirve el paquete Model en la estructura Spring Boot?
 
 ### 4. ¿Para qué sirve el paquete Repository en la estructura Spring Boot?
+Contiene las interfaces encargadas de la comunicación con la base de datos. Normalmente extienden de JpaRepository o CrudRepository,  permitiendo operaciones CRUD sin necesidad de escribir SQL manualmente.
 
 ### 5. ¿Para qué sirve el paquete Entity en la estructura Spring Boot?
+Contiene las clases que representan las tablas de la base de datos. Cada clase, anotada con @Entity, se mapea a una tabla mediante JPA/Hibernate, y sus atributos corresponden a las columnas de dicha tabla.
 
 ### 6. ¿Para qué sirve el paquete DTO en la estructura Spring Boot?
+Contiene clases (Data Transfer Object) usadas para transportar datos entre capas, especialmente entre el Controller y el cliente externo, evitando exponer directamente las entidades y controlando qué información se envía o recibe.
 
 ### 7. ¿Para qué sirve el paquete Exception en la estructura Spring Boot?
+Contiene las clases personalizadas para el manejo de errores y excepciones, capturando situaciones anómalas de forma controlada, generalmente junto a un manejador global (@ControllerAdvice o @ExceptionHandler).
 
 
 # Bibliografía
