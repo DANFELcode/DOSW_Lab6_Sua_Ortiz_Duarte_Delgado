@@ -26,6 +26,20 @@ Contiene las clases personalizadas para el manejo de errores y excepciones, capt
 
 ![Diagrama de clases](docs/diagrama-de-clases.png)
 
+
+
+## Clases identificadas
+
+**Para el requerimiento Autenticación:**
+- **Usuario**: clase base que agrupa las credenciales (correo, contraseña) comunes a Trabajador y Contratante, usadas para el login.
+
+**Para el requerimiento Trabajadores (CRUD):**
+- **Trabajador**: nombre, teléfono, oficio principal, oficios secundarios, zona de cobertura, tarifa aproximada, disponibilidad semanal, galería de trabajos, trabajos completados, calificación promedio, estado.
+- **Oficio**: representa el oficio principal y los oficios secundarios del trabajador.
+- **Profesor**: materias, nivel.
+- **CuidadorMascota** : animales atendidos.
+- **Tecnico** : marcas y equipos.    
+
 # Bibliografía
 
 Spring. (2024). Spring Boot Reference Documentation. VMware. https://docs.spring.io/spring-boot/docs/current/reference/html/
