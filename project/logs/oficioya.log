@@ -1,0 +1,26 @@
+2026-09-24T16:49:34.228-05:00  INFO 64248 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : Starting OficioyaApplication using Java 25.0.2 with PID 64248 (C:\Users\Daniel Felipe\DOSW_Lab6_Sua_Ortiz_Duarte_Delgado\project\target\classes started by Daniel Felipe in C:\Users\Daniel Felipe\DOSW_Lab6_Sua_Ortiz_Duarte_Delgado\project)
+2026-09-24T16:49:34.234-05:00 DEBUG 64248 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : Running with Spring Boot v4.2.0-M1, Spring v7.1.0-M1
+2026-09-24T16:49:34.235-05:00  INFO 64248 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-09-24T16:49:34.739-05:00  INFO 64248 --- [oficioya] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-24T16:49:34.751-05:00  INFO 64248 --- [oficioya] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-24T16:49:34.752-05:00  INFO 64248 --- [oficioya] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-24T16:49:34.791-05:00  INFO 64248 --- [oficioya] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 525 ms
+2026-09-24T16:49:35.020-05:00  INFO 64248 --- [oficioya] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-24T16:49:35.022-05:00  INFO 64248 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : Started OficioyaApplication in 1.072 seconds (process running for 1.282)
+2026-09-24T16:50:47.130-05:00  INFO 64248 --- [oficioya] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-24T16:50:47.141-05:00  INFO 64248 --- [oficioya] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-24T16:55:49.598-05:00  INFO 58748 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : Starting OficioyaApplication using Java 25.0.2 with PID 58748 (C:\Users\Daniel Felipe\DOSW_Lab6_Sua_Ortiz_Duarte_Delgado\project\target\classes started by Daniel Felipe in C:\Users\Daniel Felipe\DOSW_Lab6_Sua_Ortiz_Duarte_Delgado\project)
+2026-09-24T16:55:49.600-05:00 DEBUG 58748 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : Running with Spring Boot v4.2.0-M1, Spring v7.1.0-M1
+2026-09-24T16:55:49.601-05:00  INFO 58748 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-09-24T16:55:50.075-05:00  INFO 58748 --- [oficioya] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-24T16:55:50.084-05:00  INFO 58748 --- [oficioya] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-24T16:55:50.086-05:00  INFO 58748 --- [oficioya] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-24T16:55:50.116-05:00  INFO 58748 --- [oficioya] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 487 ms
+2026-09-24T16:55:50.336-05:00  INFO 58748 --- [oficioya] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-24T16:55:50.339-05:00  INFO 58748 --- [oficioya] [main] e.eci.dosw.oficioya.OficioyaApplication  : Started OficioyaApplication in 1.026 seconds (process running for 1.246)
+2026-09-24T16:56:38.047-05:00  INFO 58748 --- [oficioya] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-24T16:56:38.047-05:00  INFO 58748 --- [oficioya] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-24T16:56:38.049-05:00  INFO 58748 --- [oficioya] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-09-24T16:56:38.074-05:00 DEBUG 58748 --- [oficioya] [http-nio-8080-exec-1] e.e.d.o.service.TrabajadorService        : Listando todos los trabajadores
+2026-09-24T16:56:53.710-05:00  INFO 58748 --- [oficioya] [http-nio-8080-exec-4] e.e.d.o.service.TrabajadorService        : Trabajador creado con id: 1
+2026-09-24T16:57:00.530-05:00 DEBUG 58748 --- [oficioya] [http-nio-8080-exec-3] e.e.d.o.service.TrabajadorService        : Buscando trabajador con id: 1
