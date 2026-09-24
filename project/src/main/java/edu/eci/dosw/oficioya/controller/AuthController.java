@@ -9,19 +9,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.eci.dosw.oficioya.model.Trabajador;
+import edu.eci.dosw.oficioya.service.TrabajadorService;
 
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
 
+    private final TrabajadorService trabajadorService;
+
+    public AuthController(TrabajadorService trabajadorService) {
+        this.trabajadorService = trabajadorService;
+    }
+
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestBody Map<String, String> datos) {
-        for (Trabajador t : TrabajadorController.trabajadores) {
-            if (t.getCorreo().equals(datos.get("correo"))
-                    && t.getContrasena().equals(datos.get("contrasena"))) {
-                return ResponseEntity.ok("Autenticación exitosa");
-            }
+        if (trabajadorService.login(datos.get("correo"), datos.get("contrasena"))) {
+            return ResponseEntity.ok("Autenticación exitosa");
         }
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciales inválidas");
     }
