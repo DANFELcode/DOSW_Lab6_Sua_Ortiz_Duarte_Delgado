@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import edu.eci.dosw.oficioya.model.CategoriaPrincipal;
 import edu.eci.dosw.oficioya.model.EstadoTrabajador;
 import edu.eci.dosw.oficioya.model.Trabajador;
 
@@ -19,7 +20,21 @@ public class TrabajadorService {
     private long siguienteId = 1;
 
     public TrabajadorService() {
+        crear(datosSimulados("Andres Cantor", "andres@ejemplo.com", "3001234567", "clave123", "Plomero"));
+        crear(datosSimulados("Marta Ruiz", "marta@ejemplo.com", "3109876543", "clave456", "Costurera"));
+    }
 
+    private Trabajador datosSimulados(String nombre, String correo, String telefono,
+                                      String contrasena, String oficio) {
+        Trabajador trabajador = new Trabajador();
+        trabajador.setNombre(nombre);
+        trabajador.setCorreo(correo);
+        trabajador.setTelefono(telefono);
+        trabajador.setContrasena(contrasena);
+        CategoriaPrincipal principal = new CategoriaPrincipal();
+        principal.setNombre(oficio);
+        trabajador.setMainOficio(principal);
+        return trabajador;
     }
 
     public List<Trabajador> listar() {
