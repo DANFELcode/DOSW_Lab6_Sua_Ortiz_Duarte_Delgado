@@ -24,7 +24,7 @@ Contiene las clases personalizadas para el manejo de errores y excepciones, capt
 
 ## Diagrama de clases
 
-![Diagrama de clases](docs/images/class_diagram.png)
+![Diagrama de clases](project/docs/images/class_diagram.png)
 
 ## Clases identificadas
 
