@@ -11,20 +11,25 @@
 	<groupId>edu.eci.dosw</groupId>
 	<artifactId>oficioya</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
+	<name>oficioya</name>
+	<description>API REST del proyecto OficioYa, directorio de trabajadores informales</description>
+	<url>https://github.com/DANFELcode/DOSW_Lab6_Sua_Ortiz_Duarte_Delgado</url>
 	<developers>
-		<developer/>
+		<developer>
+			<name>Felipe Sua</name>
+		</developer>
+		<developer>
+			<name>David Ortiz</name>
+		</developer>
+		<developer>
+			<name>Juan Pablo Duarte</name>
+		</developer>
+		<developer>
+			<name>Nicolas Delgado</name>
+		</developer>
 	</developers>
 	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
+		<url>https://github.com/DANFELcode/DOSW_Lab6_Sua_Ortiz_Duarte_Delgado</url>
 	</scm>
 	<properties>
 		<java.version>21</java.version>
