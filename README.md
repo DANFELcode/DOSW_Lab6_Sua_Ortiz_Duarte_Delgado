@@ -38,6 +38,12 @@ Contiene las clases personalizadas para el manejo de errores y excepciones, capt
 - **CuidadorMascota** : animales atendidos.
 - **Tecnico** : marcas y equipos.    
 
+## Documentación del API
+
+La documentación interactiva del API se creacon Swagger/OpenAPI y esta en `http://localhost:8080/swagger-ui.html` cuand se inicie la aplicación
+
+![Swagger UI](project/docs/images/swagger-ui.png)
+
 # Bibliografía
 
 Spring. (2024). Spring Boot Reference Documentation. VMware. https://docs.spring.io/spring-boot/docs/current/reference/html/
