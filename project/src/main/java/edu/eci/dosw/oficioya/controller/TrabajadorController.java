@@ -14,12 +14,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import edu.eci.dosw.oficioya.model.CategoriaPrincipal;
 import edu.eci.dosw.oficioya.model.Trabajador;
 import edu.eci.dosw.oficioya.service.TrabajadorService;
 
 @RestController
 @RequestMapping("/api/trabajadores")
+@Tag(name = "Trabajadores", description = "Operaciones relacionadas con trabajadores")
 public class TrabajadorController {
 
     private final TrabajadorService service;
@@ -29,6 +33,7 @@ public class TrabajadorController {
     }
 
     @PostMapping
+    @Operation(summary = "Crear trabajador", description = "Registra un nuevo trabajador con estado Activo")
     public ResponseEntity<Trabajador> crear(@RequestBody Map<String, String> datos) {
         if (faltanDatos(datos)) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
@@ -38,11 +43,13 @@ public class TrabajadorController {
     }
 
     @GetMapping
+    @Operation(summary = "Listar trabajadores", description = "Devuelve todos los trabajadores registrados")
     public ResponseEntity<List<Trabajador>> listar() {
         return ResponseEntity.ok(service.listar());
     }
 
     @GetMapping("/{id}")
+    @Operation(summary = "Obtener trabajador por ID", description = "Devuelve un trabajador a partir de su identificador")
     public ResponseEntity<Trabajador> get(@PathVariable Long id) {
         Trabajador t = service.buscar(id);
         if (t == null) {
@@ -52,6 +59,7 @@ public class TrabajadorController {
     }
 
     @PutMapping("/{id}")
+    @Operation(summary = "Actualizar trabajador", description = "Modifica los datos de un trabajador que no este Inactivo")
     public ResponseEntity<Trabajador> actualizar(@PathVariable Long id,
                                                  @RequestBody Map<String, String> datos) {
         if (faltanDatos(datos)) {
@@ -65,6 +73,7 @@ public class TrabajadorController {
     }
 
     @PatchMapping("/{id}/inactivar")
+    @Operation(summary = "Inactivar trabajador", description = "Cambia el estado del trabajador a Inactivo sin eliminarlo")
     public ResponseEntity<Trabajador> inactivar(@PathVariable Long id) {
         Trabajador t = service.inactivar(id);
         if (t == null) {
